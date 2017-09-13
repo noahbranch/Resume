@@ -4,6 +4,9 @@
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <script src="jquery.js"></script>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
     </head>
     <title>Noah Branch - Resume</title>
     <body class="container-fluid">
@@ -39,12 +42,12 @@
                     </div>
                 </div>
                 <div id="stats">
-                                <span class="titleBit">Tweets</span>
-                                <span class="numbersBit">3</span>
-                                <span class="titleBit">Following</span>
-                                <span class="numbersBit">30</span>
-                                <span class="titleBit">Followers</span>
-                                <span class="numbersBit">8</span>
+                    <span class="titleBit">Tweets</span>
+                    <span class="numbersBit">3</span>
+                    <span class="titleBit">Following</span>
+                    <span class="numbersBit">30</span>
+                    <span class="titleBit">Followers</span>
+                    <span class="numbersBit">8</span>
                 </div>
             </div>
             <br>
@@ -66,7 +69,8 @@
             </div>
             <div class="col-md-6 col-sm-6">
                 <div class="card" style="background-color: #e8f5fd">
-                    <img src="bean.jpg" class="profileImg"><input type="text" placeholder="Are you hiring?" id="hiringQ">
+                    <img src="bean.jpg" class="profileImg"><textarea placeholder=" Are you hiring?" id="hiringQ"> Are you hiring?</textarea>
+                    <span id="customTweet"></span>
                 </div>
                 <div class="tweet">
                     <img src="sweet.jpg" class="profileImg"><span class="twitterName">Sweet Skills <span class="tweetHandleTime">@numchucks · 20m</span></span>
@@ -84,15 +88,14 @@
                         <div class="progress">
                             <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
                         </div>
-                        <p>Bootstrap</p>
+                        <p>MS-SQL Server</p>
                         <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="65"aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tweet">
-                    <hr>
-                    <img src="Heartland.png" class="profileImg"><span class="twitterName">Heartland Dental<span class="tweetHandleTime">@heartland · Since Aug, 2016</span></span>
+                    <img src="Heartland.png" class="profileImg"><span class="twitterName">Heartland Dental<span class="tweetHandleTime"> @heartland · Since Aug 2016</span></span>
                     <div class="tweetBody">
                         <ul class="jobSkills">
                             <li>IT Development Intern</li>
@@ -102,8 +105,7 @@
                 </div>
             </div>
                 <div class="tweet">
-                    <hr>
-                    <img src="springHill.jpeg" class="profileImg"><span class="twitterName">SpringHill Camps<span class="tweetHandleTime">@springhillcamps · Since Aug, 2016</span></span>
+                    <img src="springHill.jpeg" class="profileImg"><span class="twitterName">SpringHill Camps<span class="tweetHandleTime"> @springhillcamps · May 2016 to Aug 2016</span></span>
                     <div class="tweetBody">
                         <ul class="jobSkills">
                             <li>RedBrush Camp Counselor</li>
@@ -113,8 +115,7 @@
                 </div>
             </div>
                 <div class="tweet">
-                    <hr>
-                    <img src="Petras.jpg" class="profileImg"><span class="twitterName">Petras Forming<span class="tweetHandleTime">@petrasforming · Since Aug, 2016</span></span>
+                    <img src="Petras.jpg" class="profileImg"><span class="twitterName">Petras Forming<span class="tweetHandleTime"> @petrasforming · Sep 2014 to May 2015</span></span>
                     <div class="tweetBody">
                         <ul class="jobSkills">
                             <li>General Assistant to Owner</li>
@@ -127,7 +128,7 @@
             <div class="col-lg-3 col-md-4">
             <div class="card">
                 <div class="card-block">
-                    <p><span id="whoto">Who to contact</span> ·<span style="color: #2af">Refresh · View all</span></p>
+                    <p><span id="whoto">Who to contact</span> ·<span style="color: #2af; font-size: .7rem;">Refresh · View all</span></p>
                     <div class="contactSq">
                         <img src="blank.jpg" style="margin: 0 5px 0 5px; width:20%; border-radius: 100%;"><span>Jared McClellan</span><span id="company">@Heartland</span>
                         <div>
@@ -155,4 +156,36 @@
             </div>
         </div>
     </body>
+    <script>
+        $("#hiringQ").focusin(function(){
+            if(this.value == " Are you hiring?" || this.value == ""){
+                $(this).height(75);
+                $(".twitter-mention-button").show();
+                this.value = "";
+                var r = $('<a href="https://twitter.com/intent/tweet?screen_name=archimedeshand" class="twitter-mention-button" data-size="large" data-text="'+ this.value +'" data-show-count="false">Tweet to @archimedeshand</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"><script>');
+                $("#customTweet").empty();
+                $("#customTweet").append(r);
+            }
+        });
+        $("#hiringQ").focusout(function(){
+            
+            if(this.value == " Are you hiring?" || this.value == ""){
+                $(this).height(30);
+                this.value = " Are you hiring?";
+                $(".twitter-mention-button").hide();
+            }
+            else{
+                var r = $('<a href="https://twitter.com/intent/tweet?screen_name=archimedeshand" class="twitter-mention-button" data-size="large" data-text="'+ this.value +'" data-show-count="false">Tweet to @archimedeshand</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"><script>');
+            $("#customTweet").empty();
+            $("#customTweet").append(r);
+                
+            }
+        })
+        $("#hiringQ").keyup(function(){
+            
+            var m = $("#customTweet");
+            var x = m;
+        });
+        $("#")
+    </script>
 </html>
