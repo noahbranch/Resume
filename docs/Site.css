@@ -195,3 +195,105 @@ body {
     position: relative;
     margin: 10px;
 }
+
+#stanley {
+    background-color: transparent;
+}
+
+#hiringQ {
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    top: -50px;
+    border: 1px lightgrey solid;
+    color: #2af;
+    resize: none;
+    height: 30px;
+}
+
+#skills {
+    margin: 10px;
+}
+
+#mainArea {
+}
+
+
+
+.tweet {
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+.tweet:hover {
+    background-color: #eff;
+}
+
+.profileImg {
+    margin: 15px;
+    border-radius: 100px;
+    width: 40px;
+}
+
+#findOthers {
+    padding-left: 15px;
+    color: #2af;
+    font-size: .8rem;
+    position: relative;
+    padding-top: 
+}
+
+.tweetBody {
+    position: relative;
+    margin:0 70px 0 70px;
+    top: -25px;
+    font-size: .75rem;
+}
+
+.tweetHandleTime {
+    font-weight: 200;
+    color: darkgrey;
+    font-size: .7rem;
+}
+
+.twitterName {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.jobSkills {
+    
+}
+.jobSkills li {
+    list-style: none;
+}
+
+.trend {
+    font-weight: bold;
+    color: #2af;
+}
+.trend:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info {
+    font-size: .75rem;
+    color: darkgrey;
+    position: relative;
+    top: -20px;
+}
+
+.contactSq {
+    height: 60px;
+    border-bottom: 1px lightgrey solid;
+    margin: 5px;
+}
+
+#tweetBtn {
+}
+
+.twitter-mention-button {
+    margin: 10px;
+}
