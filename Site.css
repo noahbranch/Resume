@@ -1,0 +1,285 @@
+hr {
+    margin: 0;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+ul.menu li {
+    float: left;
+    text-decoration: none;
+}
+
+ul.menu li a.listEl {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover:not(.active):not(#stanley):not(#profileImg) {
+    border-bottom: 2px #2af solid;
+    color: #2af;
+}
+
+ul.menu li a.active {
+    border-bottom: 2px #2af solid;
+    color: #2af;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #000000;
+}
+#headBar {
+    background-color: white;
+}
+
+#searchBar {
+    width: 100%;
+    border-radius: 60px;
+    border: .5px #f3f3f3 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    z-index: 5;
+}
+
+#search {
+    position: relative;
+    width: 190px;
+    height: 30px;
+}
+
+#searchButton {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+}
+
+#profile {
+    border-radius: 100%;
+    margin: 30%;
+}
+
+#profileImg:hover {
+    background-color: transparent;
+}
+
+#emailNoahBtn {
+    background-color: #2af;
+    margin: 15%;
+    width: 100%;
+    border-radius: 50px;
+}
+#emailNoahBtn:hover{
+    background-color: white;
+    color: #2af;
+}
+
+.referenceImg {
+    
+}
+
+#contactButton {
+    border-radius: 50px;
+    height: 20px;
+    position: relative;
+    left: 25%;
+    top: -20px;
+    line-height: 0px;
+    background-color: #fff;
+    color: #2af;
+}
+#contactButton:hover{
+    background-color: #2af;
+    color: white;
+}
+
+.card-block {
+}
+
+.card {
+}
+
+
+
+#foxtato {
+    background-image: url(foxtato.jpg);
+    background-size: contain;
+    
+}
+
+#noahCard {
+    height: 100px;
+    background-position: center;
+    background-image: url(foxtato.jpg);
+}
+
+#beanPic {
+    height:100px;
+    border-radius: 100px;
+    position: relative;
+    top:-50px;
+    border: 5px white solid;
+}
+
+#namePart {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#handle {
+    position: relative;
+    right: -100px;
+    top: -100px;
+    overflow: hidden;
+}
+
+#noahBranch {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#twitterHand {
+    font-size: .7rem;
+    position: relative;
+    top: -20px;
+}
+
+.titleBit {
+    position: relative;
+    left: 25px;
+}
+
+#noahText {
+    background-color: transparent;
+    height: 50px;
+}
+
+#stats {
+    height: 75px;
+    background-color: transparent;
+}
+
+.numbersBit {
+    position: relative;
+    top: 25px;
+    color: #2af;
+    font-size: 1.5rem
+}
+
+#statList {
+    
+}
+
+#company {
+    color: darkgray;
+}
+
+#whoto {
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#stanley {
+    background-color: transparent;
+}
+
+#hiringQ {
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    top: -50px;
+}
+
+#skills {
+    margin: 10px;
+}
+
+#mainArea {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+.tweet {
+    background-color: white;
+    padding: 5px;
+}
+
+.profileImg {
+    margin: 15px;
+    border-radius: 100px;
+    width: 40px;
+}
+
+#findOthers {
+    padding-left: 15px;
+    color: #2af;
+    font-size: .8rem;
+    position: relative;
+    padding-top: 
+}
+
+.tweetBody {
+    position: relative;
+    margin:0 70px 0 70px;
+    top: -25px;
+    font-size: .75rem;
+}
+
+.tweetHandleTime {
+    font-weight: 200;
+    color: darkgrey;
+    font-size: .7rem;
+}
+
+.twitterName {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.jobSkills {
+    
+}
+.jobSkills li {
+    list-style: none;
+}
+
+.trend {
+    font-weight: bold;
+    color: #2af;
+}
+.trend:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info {
+    font-size: .75rem;
+    color: darkgrey;
+    position: relative;
+    top: -20px;
+}
+
+.contactSq {
+    height: 60px;
+    border-bottom: 1px lightgrey solid;
+    margin: 5px;
+}
