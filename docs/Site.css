@@ -34,7 +34,7 @@ ul.menu li a.active {
 
 body {
     font-family: sans-serif;
-    background-color: #000000;
+    background-color: #e6ecf0;
 }
 #headBar {
     background-color: white;
@@ -102,6 +102,7 @@ body {
     line-height: 0px;
     background-color: #fff;
     color: #2af;
+    cursor: pointer;
 }
 #contactButton:hover{
     background-color: #2af;
@@ -216,10 +217,6 @@ body {
     margin: 10px;
 }
 
-#mainArea {
-}
-
-
 
 .tweet {
     background-color: white;
@@ -227,7 +224,7 @@ body {
     border-bottom: 1px #e5e5e5 solid;
 }
 .tweet:hover {
-    background-color: #eff;
+    background-color: #f5f8fa;
 }
 
 .profileImg {
@@ -296,4 +293,15 @@ body {
 
 .twitter-mention-button {
     margin: 10px;
+}
+
+#bottomText {
+    position: relative;
+    top:-15px;
+    left: 20%;
+    font-size: 1.2rem;
+}
+
+.fa-twitterfa {
+    cursor: pointer;
 }
