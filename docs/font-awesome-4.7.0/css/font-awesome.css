@@ -192,6 +192,9 @@
 .fa-envelope-o:before {
   content: "\f003";
 }
+.fa-envelope-o:hover{
+    color: lightskyblue;
+}
 .fa-heart:before {
   content: "\f004";
 }
@@ -535,6 +538,9 @@
 .fa-retweet:before {
   content: "\f079";
 }
+.fa-retweet:hover{
+    color:lightseagreen;
+}
 .fa-shopping-cart:before {
   content: "\f07a";
 }
@@ -584,6 +590,9 @@
 }
 .fa-heart-o:before {
   content: "\f08a";
+}
+.fa-heart-o:hover{
+    color: deeppink;
 }
 .fa-sign-out:before {
   content: "\f08b";
@@ -819,6 +828,9 @@
 }
 .fa-comment-o:before {
   content: "\f0e5";
+}
+.fa-comment-o:hover{
+    color: skyblue;
 }
 .fa-comments-o:before {
   content: "\f0e6";
