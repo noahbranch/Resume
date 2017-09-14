@@ -35,6 +35,7 @@ ul.menu li a.active {
 body {
     font-family: sans-serif;
     background-color: #000000;
+    background-color: #e6ecf0;
 }
 #headBar {
     background-color: white;
@@ -102,6 +103,7 @@ body {
     line-height: 0px;
     background-color: #fff;
     color: #2af;
+    cursor: pointer;
 }
 #contactButton:hover{
     background-color: #2af;
@@ -205,6 +207,10 @@ body {
     position: relative;
     left: 70px;
     top: -50px;
+    border: 1px lightgrey solid;
+    color: #2af;
+    resize: none;
+    height: 30px;
 }
 
 #skills {
@@ -221,6 +227,10 @@ body {
 .tweet {
     background-color: white;
     padding: 5px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+.tweet:hover {
+    background-color: #f5f8fa;
 }
 
 .profileImg {
@@ -253,6 +263,7 @@ body {
 .twitterName {
     font-weight: bold;
     font-size: 1.1rem;
+    font-size: .8rem;
 }
 
 .jobSkills {
@@ -282,4 +293,65 @@ body {
     height: 60px;
     border-bottom: 1px lightgrey solid;
     margin: 5px;
+}
+
+#tweetBtn {
+}
+
+.twitter-mention-button {
+    margin: 10px;
+}
+
+#bottomText {
+    position: relative;
+    top:-15px;
+    left: 20%;
+    font-size: 1.2rem;
+}
+
+.fa-twitterfa {
+    cursor: pointer;
+}
+
+#text{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1); /* Black background with opacity */
+    z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#text{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
+}
+#loading {
+    background-color: #e8f5fd;
+    border: 1px lightgrey solid;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#nextJob {
+    top: 10px;
+    position: relative;
+    font-style: italic;
 }

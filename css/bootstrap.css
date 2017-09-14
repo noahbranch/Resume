@@ -95,6 +95,7 @@ body {
   color: #212529;
   background-color: #f3f3f3;
     max-width: 1200;
+    max-width: 1200px;
 }
 
 [tabindex="-1"]:focus {
@@ -8182,3 +8183,6 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.twitter-mention-button {
+    
+}
